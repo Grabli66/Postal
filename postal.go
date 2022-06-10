@@ -82,8 +82,10 @@ func (post *Postal) Listen(port int) {
 	post.pushChan = pushChan
 
 	app.Get("/push", websocket.New(func(ctx *websocket.Conn) {
-		msg := <-post.pushChan
-		ctx.WriteJSON(msg)
+		for {
+			msg := <-post.pushChan
+			ctx.WriteJSON(msg)
+		}
 	}))
 
 	app.Listen(fmt.Sprintf(":%d", port))

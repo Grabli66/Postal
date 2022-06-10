@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"rapidfingers.com/postal"
+	postal "github.com/Grabli66/Postal/v2"
 )
 
 func main() {
