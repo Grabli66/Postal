@@ -1,4 +1,4 @@
-module rapidfingers.com/postal
+module github.com/Grabli66/Postal
 
 go 1.18
 
