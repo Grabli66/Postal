@@ -1,4 +1,4 @@
-module github.com/Grabli66/Postal
+module github.com/Grabli66/Postal/v2
 
 go 1.18
 
